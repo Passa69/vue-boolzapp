@@ -4,3 +4,48 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/* sfondo */
+#band {
+    height: 15vh;
+    width: 100%;
+    background-color: #029588;
+}
+main {
+    height: 85vh;
+    background-color: #dcdbd2;
+}
+
+/* chat */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#container {
+    position: absolute;
+    top: 20px;
+    left: 10%;
+    width: 80%;
+    /* debug */
+    height: 650px;
+}
+
+/* elenco laterale */
+#chat {
+    width: 30%;
+    height: 100%;
+    float: left;
+    /* debug */
+    background-color: blue;
+}
+
+/* chat */
+#conversation {
+    width: 70%;
+    height: 100%;
+    float: right;
+    /* debug */
+    background-color: palevioletred;
+}
