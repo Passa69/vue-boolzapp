@@ -38,8 +38,7 @@ main {
     width: 30%;
     height: 100%;
     float: left;
-    /* debug */
-    background-color: blue;
+    background-color: white;
 }
 
 /* chat */
@@ -47,8 +46,7 @@ main {
     width: 70%;
     height: 100%;
     float: right;
-    /* debug */
-    background-color: palevioletred;
+    background-image: url(../img/831a427866372688ee3530ec4a035172.jpg);
 }
 
 /* barra utente */
