@@ -64,7 +64,11 @@
                     </div>
 
                     <div id="list">
-                        
+                        <div v-for="id, i in contacts" id="person_chat" :key="i">
+                            <img :src="id.avatar" alt="">
+
+                            <span>{{ id.name }}</span>
+                        </div>
                     </div>
                 </section>
             </aside>
