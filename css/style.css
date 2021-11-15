@@ -202,4 +202,9 @@ main {
 .list_time {
     color: #afb3ac;
     font-size: 10px;
+    padding-right: 5px;
+}
+
+#person_chat > div {
+    line-height: 70px;
 }
