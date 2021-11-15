@@ -188,7 +188,18 @@ main {
 #person_chat {
     height: 70px;
     width: 100%;
-    /* debug */
-    background-color: red;
-    border: 1px solid black;
+    border: 1px solid #e9ebeb;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#person_chat > div > img {
+    border-radius: 50%;
+}
+
+.list_time {
+    color: #afb3ac;
+    font-size: 10px;
 }
