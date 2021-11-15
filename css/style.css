@@ -47,6 +47,9 @@ main {
     height: 100%;
     float: right;
     background-image: url(../img/831a427866372688ee3530ec4a035172.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /* barra utente */
@@ -109,4 +112,21 @@ main {
 
 .not_desk {
     text-decoration: underline;
+}
+
+/* input di scrittura */
+#input_scritt {
+    height: 50px;
+    background-color: #f3eeea;
+}
+
+#input_scritt > i {
+    font-size: 20px;
+    color: #6b7477;
+    margin: 15px;
+}
+
+#input_scritt > input {
+    width: 745px;
+    border: none;
 }
