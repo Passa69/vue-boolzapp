@@ -74,7 +74,7 @@ main {
     margin-top: 20px;
 }
 
-#last_access {
+.last_access {
     font-size: 13px;
     color: #979d9f;
 }
@@ -88,4 +88,27 @@ main {
 
 .icon_utente > i {
     margin-right: 10px;
+}
+
+/* notifiche */
+#notification {
+    background-color: #8edafc;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#notification > i {
+    color: #8edafc;
+    background-color: white;
+    font-size: 20px;
+    border-radius: 50%;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+.not_desk {
+    text-decoration: underline;
 }
