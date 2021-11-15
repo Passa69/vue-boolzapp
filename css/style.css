@@ -144,7 +144,18 @@ main {
     background-color: #d5f9ba;
 }
 
-.mess > span {
+.mess_time {
+    color: #afb3ac;
+    font-size: 10px;
+    float: right;
+    margin-top: 4px;
+}
+
+.time_rc {
+    margin-top: 20px;
+}
+
+.mess_text {
     font-size: 15px;
 }
 
