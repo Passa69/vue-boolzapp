@@ -169,3 +169,18 @@ main {
 .posit_ric {
     float: left;
 }
+
+/* elenco chat */
+#input_list {
+    padding: 15px;
+}
+
+#input_list > i {
+    margin-right: 10px;
+    color: #babec0;
+}
+
+#input_list > input {
+    width: 300px;
+    border: none;
+}
