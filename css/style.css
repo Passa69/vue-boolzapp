@@ -130,3 +130,31 @@ main {
     width: 745px;
     border: none;
 }
+
+/* conversazione */
+.mess {
+    padding: 20px;
+    width: 250px;
+    border-radius: 15px;
+    margin: 10px 25px;
+    background-color: white;
+}
+
+.mess_utente {
+    background-color: #d5f9ba;
+}
+
+.mess > span {
+    font-size: 15px;
+}
+
+.posit_utente {
+    float: right;
+    position: absolute;
+    top: 150px;
+    right: 0;
+}
+
+.posit_ric {
+    float: left;
+}
