@@ -65,7 +65,7 @@
 
                     <div class="list">
                         <div v-for="id, i in contacts" id="person_chat" :key="i">
-                            <div>
+                            <div @click="chatAttiva">
                                 <img :src="id.avatar + '.jpg'" alt="" class="img_utente">
 
                                 <span>{{ id.name }}</span>
