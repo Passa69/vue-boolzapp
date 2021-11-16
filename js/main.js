@@ -1,11 +1,11 @@
 var chats = new Vue ({
-    el: ".list",
+    el: "main",
     data: {
         contacts: [
             {
                 name: 'Michele',
                 avatar: 'img/avatar_1',
-                visible: false,
+                visible: true,
                 messages: [
                     {
                         date: '10/01/2020 15:30:55',
@@ -86,14 +86,14 @@ var chats = new Vue ({
                 ],
             },
         ],
-            // methods: {
-            //     chatAttiva () {
-            //         this.contacts.visible = true;
+            methods: {
+                chatAttiva (index) {
+                    this.contacts[index].visible = true;
 
-            //         if(contacts.visible === true) {
-            //             console.log("ciao");
-            //         }
-            //     }
-            // }
+                    if(contacts[index].visible === true) {
+                        console.log("ciao");
+                    }
+                }
+            }
     }
 });

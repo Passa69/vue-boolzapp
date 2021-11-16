@@ -64,11 +64,11 @@
                     </div>
 
                     <div class="list">
-                        <div v-for="contact, i in contacts" id="person_chat" :key="i">
+                        <div v-for="cont, i in contacts" id="person_chat" :key="i">
                             <div>
-                                <img :src="contact.avatar + '.jpg'" alt="" class="img_utente">
+                                <img :src="cont.avatar + '.jpg'" alt="" class="img_utente">
 
-                                <span>{{ contact.name }}</span>
+                                <span>{{ cont.name }}</span>
                                 <br>
                                 <span></span>
                             </div>
@@ -104,14 +104,15 @@
                 </section>
 
                 <!-- conversazione -->
-                <section class="list">
-                    <div v-for="message, i in contact.messages" :key="i">
-                        <div class="mess" :class="mes.status === 'sent' ? 'mess_utente posiz_utente' : 'posiz_ric' ">
-                            <span class="mess_text">{{ message.text }}</span>
-
-                            <span class="mess_time">{{ message.date }}</span>
+                <section>
+                    <div v-for="contact in contacts">
+                        <div v-for="(message, i) in contact.messages" :key="i" v-if="contact.visible">
+                            <div class="mess" :class="message.status === 'sent' ? 'mess_utente posiz_utente' : 'posiz_ric' ">
+                                <span class="mess_text">{{ message.text }}</span>
+    
+                                <span class="mess_time">{{ message.date }}</span>
+                            </div>
                         </div>
-
                     </div>
                 </section>
 
