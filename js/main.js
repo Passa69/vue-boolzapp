@@ -5,7 +5,7 @@ var chats = new Vue ({
             {
                 name: 'Michele',
                 avatar: 'img/avatar_1',
-                visible: true,
+                visible: false,
                 messages: [
                     {
                         date: '10/01/2020 15:30:55',
@@ -27,7 +27,7 @@ var chats = new Vue ({
             {
                 name: 'Fabio',
                 avatar: 'img/avatar_2',
-                visible: true,
+                visible: false,
                 messages: [
                     {
                         date: '20/03/2020 16:30:00',
@@ -49,7 +49,7 @@ var chats = new Vue ({
             {
                 name: 'Samuele',
                 avatar: 'img/avatar_3',
-                visible: true,
+                visible: false,
                 messages: [
                     {
                         date: '28/03/2020 10:10:40',
@@ -71,7 +71,7 @@ var chats = new Vue ({
             {
                 name: 'Luisa',
                 avatar: 'img/avatar_4',
-                visible: true,
+                visible: false,
                 messages: [
                     {
                         date: '10/01/2020 15:30:55',
@@ -86,10 +86,14 @@ var chats = new Vue ({
                 ],
             },
         ],
-            methods: {
-                chatAttiva () {
-                    
-                }
-            }
+            // methods: {
+            //     chatAttiva () {
+            //         this.contacts.visible = true;
+
+            //         if(contacts.visible === true) {
+            //             console.log("ciao");
+            //         }
+            //     }
+            // }
     }
 });
