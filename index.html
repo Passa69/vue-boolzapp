@@ -106,21 +106,12 @@
                 <!-- conversazione -->
                 <section class="list">
                     <div v-for="mes, j in messages" :kay="j">
-                        <div v-if="mes.status === sent">
-                            <div class="mess mess_utente posiz_utente">
-                                <span class="mess_text">{{ mes.text }}</span>
-    
-                                <span class="mess_time">{{ mes.date }}</span>
-                            </div>
+                        <div class="mess" :class="mes.status === 'sent' ? 'mess_utente posiz_utente' : 'posiz_ric' ">
+                            <span class="mess_text">{{ mes.text }}</span>
+
+                            <span class="mess_time">{{ mes.date }}</span>
                         </div>
-                    
-                        <div v-else>
-                            <div class="mess posiz_ric">
-                                <span class="mess_text">{{ mes.text }}</span>
-    
-                                <span class="mess_time time_rc">{{ mes.date }}</span>
-                            </div>
-                        </div>
+
                     </div>
                 </section>
 
