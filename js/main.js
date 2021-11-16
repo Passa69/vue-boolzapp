@@ -1,5 +1,5 @@
 var chats = new Vue ({
-    el: "#list",
+    el: ".list",
     data: {
         contacts: [
             {

@@ -63,12 +63,14 @@
                         <input type="text" placeholder="Cerca o inizia una nuova chat">
                     </div>
 
-                    <div id="list">
+                    <div class="list">
                         <div v-for="id, i in contacts" id="person_chat" :key="i">
                             <div>
                                 <img :src="id.avatar + '.jpg'" alt="" class="img_utente">
 
                                 <span>{{ id.name }}</span>
+                                <br>
+                                <span></span>
                             </div>
 
                             <span class="list_time">10/01/2021 16:35:22</span>
@@ -102,12 +104,12 @@
                 </section>
 
                 <!-- conversazione -->
-                <section>
-                    <div class="posit_utente">
-                        <div class="mess mess_utente">
-                            <span class="mess_text">Hai portato a spasso il cane?</span>
+                <section class="list">
+                    <div class="posiz_utente">
+                        <div v-for="mess, j in messages" class="mess mess_utente" :kay="j">
+                            <span class="mess_text">{{ mess.text }}</span>
 
-                            <span class="mess_time">10/01/2021 15:30:55</span>
+                            <span class="mess_time">{{ mess.date }}</span>
                         </div>
     
                         <!-- <div class="mess mess_utente">
@@ -117,11 +119,11 @@
                         </div> -->
                     </div>
 
-                    <div class="posit_ric">
-                        <div class="mess">
-                            <span class="mess_text">Tutto fatto!</span>
+                    <div class="posiz_ric">
+                        <div v-for="receiv, u in messages" class="mess" :key="u">
+                            <span class="mess_text">{{ receiv.text }}</span>
 
-                            <span class="mess_time time_rc">10/01/2021 16:30:35</span>
+                            <span class="mess_time time_rc">{{ receiv.date }}</span>
                         </div>
                     </div>
                     

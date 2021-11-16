@@ -160,14 +160,14 @@ main {
     font-size: 15px;
 }
 
-.posit_utente {
+.posiz_utente {
     float: right;
     position: absolute;
     top: 150px;
     right: 0;
 }
 
-.posit_ric {
+.posiz_ric {
     float: left;
 }
 
