@@ -64,7 +64,7 @@
                     </div>
 
                     <div class="list">
-                        <div v-for="cont, i in contacts" id="person_chat" :key="i">
+                        <div @click="chatAttiva(i)" v-for="cont, i in contacts" id="person_chat" :key="i">
                             <div>
                                 <img :src="cont.avatar + '.jpg'" alt="" class="img_utente">
 
@@ -72,9 +72,9 @@
                                 <br>
                                 <span></span>
                             </div>
-
-                            <span class="list_time">10/01/2021 16:35:22</span>
                             
+                            <span class="list_time">10/01/2021 16:35:22</span>
+
                         </div>
                     </div>
                 </section>
@@ -105,13 +105,11 @@
 
                 <!-- conversazione -->
                 <section>
-                    <div v-for="contact in contacts">
-                        <div v-for="(message, i) in contact.messages" :key="i" v-if="contact.visible">
-                            <div class="mess" :class="message.status === 'sent' ? 'mess_utente posiz_utente' : 'posiz_ric' ">
-                                <span class="mess_text">{{ message.text }}</span>
-    
-                                <span class="mess_time">{{ message.date }}</span>
-                            </div>
+                    <div v-for="(message, i) in contacts[activeChat].messages" :key="i">
+                        <div class="mess" :class="message.status === 'sent' ? 'mess_utente posiz_utente' : 'posiz_ric' ">
+                            <span class="mess_text">{{ message.text }}</span>
+
+                            <span class="mess_time">{{ message.date }}</span>
                         </div>
                     </div>
                 </section>
