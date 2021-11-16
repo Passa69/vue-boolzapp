@@ -105,28 +105,23 @@
 
                 <!-- conversazione -->
                 <section class="list">
-                    <div class="posiz_utente">
-                        <div v-for="mess, j in messages" class="mess mess_utente" :kay="j">
-                            <span class="mess_text">{{ mess.text }}</span>
-
-                            <span class="mess_time">{{ mess.date }}</span>
-                        </div>
+                    <div v-for="mes, j in messages" :kay="j">
+                        <div v-if="mes.status === sent">
+                            <div class="mess mess_utente posiz_utente">
+                                <span class="mess_text">{{ mes.text }}</span>
     
-                        <!-- <div class="mess mess_utente">
-                            <span class="mess_text">Ricordati di dargli da mangiare</span>
-
-                            <span class="mess_time">10/01/2021 15:35:15</span>
-                        </div> -->
-                    </div>
-
-                    <div class="posiz_ric">
-                        <div v-for="receiv, u in messages" class="mess" :key="u">
-                            <span class="mess_text">{{ receiv.text }}</span>
-
-                            <span class="mess_time time_rc">{{ receiv.date }}</span>
+                                <span class="mess_time">{{ mes.date }}</span>
+                            </div>
+                        </div>
+                    
+                        <div v-else>
+                            <div class="mess posiz_ric">
+                                <span class="mess_text">{{ mes.text }}</span>
+    
+                                <span class="mess_time time_rc">{{ mes.date }}</span>
+                            </div>
                         </div>
                     </div>
-                    
                 </section>
 
                 <!-- input di scrittura -->
