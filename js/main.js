@@ -102,7 +102,7 @@ var chats = new Vue ({
                 status: 'sent'
             });
 
-            setTimeout(answerOK, 1000);  
+            setTimeout(() => {this.answerOK()}, 1000);  
         },
 
         answerOK () { 
