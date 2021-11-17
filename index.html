@@ -85,16 +85,19 @@
 
                 <!-- ricevente -->
                 <section class="utente">
-                    <div class="img_utente">
-                        <img src="img/avatar_1.jpg" alt="Michele">
+                    <div  v-for="(profile, i) in contacts" :key="i">
+                        <div class="img_utente">
+                            <img :src="profile.avatar + '.jpg'" alt="Michele">
+                        </div>
+    
+                        <div class="text_utente">
+                            <h4>{{ profile.name }}</h4>
+    
+                            <span class="last_access">Ultimo accesso alle</span>
+                        </div>
+    
                     </div>
-
-                    <div class="text_utente">
-                        <h4>Michele</h4>
-
-                        <span class="last_access">Ultimo accesso alle 10/01/2021 16:15:22</span>
-                    </div>
-
+                    
                     <div class="icon_utente">
                         <i class="fas fa-search"></i>
                         <i class="fas fa-paperclip"></i>
