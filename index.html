@@ -85,17 +85,14 @@
 
                 <!-- ricevente -->
                 <section class="utente">
-                    <div  v-for="(profile, i) in contacts" :key="i">
-                        <div class="img_utente">
-                            <img :src="profile.avatar + '.jpg'" alt="Michele">
-                        </div>
-    
-                        <div class="text_utente">
-                            <h4>{{ profile.name }}</h4>
-    
-                            <span class="last_access">Ultimo accesso alle</span>
-                        </div>
-    
+                    <div class="img_utente">
+                        <img :src="contacts[activeChat].avatar + '.jpg'" alt="Michele">
+                    </div>
+
+                    <div class="text_utente">
+                        <h4>{{contacts[activeChat].name }}</h4>
+
+                        <span class="last_access">Ultimo accesso alle</span>
                     </div>
                     
                     <div class="icon_utente">
