@@ -106,7 +106,7 @@
                 <!-- conversazione -->
                 <section>
                     <div v-for="(message, i) in contacts[activeChat].messages" :key="i">
-                        <div class="mess" :class="message.status === 'sent' ? 'mess_utente posiz_utente' : 'posiz_ric' ">
+                        <div class="mess" :class="message.status === 'sent' ? 'mess_utente' : '' ">
                             <span class="mess_text">{{ message.text }}</span>
 
                             <span class="mess_time">{{ message.date }}</span>

@@ -139,6 +139,8 @@ main {
     border-radius: 15px;
     margin: 10px 30px;
     background-color: white;
+    display: flex;
+    flex-direction: row;
 }
 
 .mess_utente {
@@ -158,14 +160,6 @@ main {
 
 .mess_text {
     font-size: 15px;
-}
-
-.posiz_utente {
-    float: right;
-}
-
-.posiz_ric {
-    float: left;
 }
 
 /* elenco chat */
