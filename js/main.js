@@ -2,6 +2,7 @@ var chats = new Vue ({
     el: "main",
     data: {
         activeChat: 0,
+        newMessage: "",
         contacts: [
             {
                 name: 'Michele',
@@ -92,6 +93,15 @@ var chats = new Vue ({
     methods: {
         chatAttiva: function (index) {
             this.activeChat = index;
+        },
+
+        addMess () {
+            this.contacts.messages.push({
+                date: '10/01/2020 15:30:55',
+                text: this.newMessage,
+                status: 'sent'
+            });
+            
         }
     }
 });
