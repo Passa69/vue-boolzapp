@@ -101,7 +101,19 @@ var chats = new Vue ({
                 text: this.newMessage,
                 status: 'sent'
             });
-            
+
+            setTimeout(answerOK, 1000);  
+        },
+
+        answerOK () { 
+            this.contacts[this.activeChat].messages.push({
+                date: '10/01/2020 15:30:55',
+                text: 'ok',
+                status: 'received'
+            });
         }
+ 
     }
 });
+
+
