@@ -133,14 +133,17 @@ main {
 }
 
 /* conversazione */
+#conv_mess {
+    display: flex;
+    flex-direction: row;
+}
+
 .mess {
     padding: 20px;
     width: 300px;
     border-radius: 15px;
     margin: 10px 30px;
-    background-color: white;
-    display: flex;
-    flex-direction: row;
+    background-color: white;  
 }
 
 .mess_utente {
@@ -151,7 +154,7 @@ main {
     color: #afb3ac;
     font-size: 10px;
     float: right;
-    margin-top: 4px;
+    margin-top: 5px;
 }
 
 .time_rc {
