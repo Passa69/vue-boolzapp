@@ -117,16 +117,10 @@ var chats = new Vue ({
         },
 
         searchUtent () {
-            let hyphenationUser = this.userSearch.split('');
-            let hyphenationUtent = this.contacts[this.activeChat].name.split('');
-
-            for (i= 0; i < hyphenationUser.length) {
-
-                if (hyphenationUser.indexOf(hyphenationUtent)) {
-
-                } else {
-    
-                }
+            let result = this.userSearch.compareToIgnoreCase(this.contacts.name);
+            
+            if (result === true) {
+                console.log("ciao");
             }
             
         }
