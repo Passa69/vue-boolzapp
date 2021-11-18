@@ -96,7 +96,9 @@ var chats = new Vue ({
         },
 
         addMess () {
-            this.contacts[this.activeChat].messages.push({
+            let thisContact = this.contacts[this.activeChat];
+
+            thisContact.messages.push({
                 date: '10/01/2020 15:30:55',
                 text: this.newMessage,
                 status: 'sent'
