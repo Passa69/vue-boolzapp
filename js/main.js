@@ -3,6 +3,7 @@ var chats = new Vue ({
     data: {
         activeChat: 0,
         newMessage: "",
+        userSearch: "",
         contacts: [
             {
                 name: 'Michele',
@@ -113,6 +114,21 @@ var chats = new Vue ({
                 text: 'ok',
                 status: 'received'
             });
+        },
+
+        searchUtent () {
+            let hyphenationUser = this.userSearch.split('');
+            let hyphenationUtent = this.contacts[this.activeChat].name.split('');
+
+            for (i= 0; i < hyphenationUser.length) {
+
+                if (hyphenationUser.indexOf(hyphenationUtent)) {
+
+                } else {
+    
+                }
+            }
+            
         }
  
     }

@@ -60,7 +60,7 @@
                     <div id="input_list">
                         <i class="fas fa-search"></i>
 
-                        <input type="text" placeholder="Cerca o inizia una nuova chat">
+                        <input type="text" v-model="userSearch" @keyup.enter="searchUtent" placeholder="Cerca o inizia una nuova chat">
                     </div>
 
                     <div class="list">

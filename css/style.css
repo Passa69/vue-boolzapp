@@ -203,3 +203,8 @@ main {
 #person_chat > div {
     line-height: 70px;
 }
+
+/* js */
+.not_user {
+    display: none;
+}
