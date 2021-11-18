@@ -114,15 +114,6 @@ var chats = new Vue ({
                 text: 'ok',
                 status: 'received'
             });
-        },
-
-        searchUtent () {
-            let result = this.userSearch.compareToIgnoreCase(this.contacts.name);
-            
-            if (result === true) {
-                console.log("ciao");
-            }
-            
         }
  
     }
