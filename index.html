@@ -64,7 +64,7 @@
                     </div>
 
                     <div class="list">
-                        <div @click="chatAttiva(i)" v-for="cont, i in contacts" v-if="cont.name.includes(userSearch)" id="person_chat" :key="i">
+                        <div @click="chatAttiva(i)" v-for="cont, i in contacts" v-if="cont.name.toLowerCase().includes(userSearch.toLowerCase())" id="person_chat" :key="i">
                             <div>
                                 <img :src="cont.avatar + '.jpg'" alt="" class="img_utente">
 
