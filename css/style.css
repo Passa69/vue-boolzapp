@@ -14,7 +14,7 @@
     background-color: #029588;
 }
 main {
-    height: 100vh;
+    height: 120vh;
     background-color: #dcdbd2;
 }
 
@@ -128,7 +128,7 @@ main {
 }
 
 #input_scritt > input {
-    width: 745px;
+    width: 645px;
     border: none;
 }
 
@@ -176,7 +176,7 @@ main {
 }
 
 #input_list > input {
-    width: 300px;
+    width: 200px;
     border: none;
 }
 
